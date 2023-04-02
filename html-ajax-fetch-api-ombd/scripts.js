@@ -3,7 +3,7 @@ function searchMovie() {
   $("#movie-list").html("");
 
   $.ajax({
-    url: "http://omdbapi.com",
+    url: "https://omdbapi.com",
     // methodnya
     type: "get",
     // kembaliannya mau bentuknya apa : text, json, xml
@@ -75,7 +75,7 @@ $("#movie-list").on("click", ".see-details", function () {
   // ambil tombol ini dan ambil datanya yang bernama id
   // console.log($(this).data('id'))
   $.ajax({
-    url: "http://omdbapi.com",
+    url: "https://omdbapi.com",
     dataType: "json",
     type: "get",
     data: {
